@@ -25,7 +25,7 @@ course_id = '****'
 # not the sis_id but the canvas internal id
 REQUEST_HEADERS = {'Authorization':'Bearer %s' % access_token}
 
-# First, get the list of students in the course
+# First, get the list of students in the course using API course_id
 
 students_endpoint = BASE_URL % '/courses/%s/students' % (course_id)
 # Create a request, adding the REQUEST_HEADERS to it for authentication
