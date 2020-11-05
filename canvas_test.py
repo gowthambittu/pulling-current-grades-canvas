@@ -43,7 +43,7 @@ while not_done:
 
 print ('done gettign students',len(students),'students')
 
-# Load the response as JSON
+# Load the response as JSON using request into response_data
 response_data = student_request.json()
 # Exit if there were no students in the returned data
 if not response_data:
